@@ -1,0 +1,99 @@
+<ion-header >
+  <ion-navbar color="primary"><!--1) agregamos el color -->
+   
+     <!--AQUI SE ENCUENTRA EL el menu-->
+      <button ion-button menuToggle>
+        <ion-icon name="menu"></ion-icon>
+      </button>
+      <br>
+      <br>
+      <ion-title >Películas</ion-title>
+     <br><!--2) AGREGUE ESPACIO BR-->
+     <br>
+      </ion-navbar>
+      
+<!-- <ion-list>
+  <ion-item *ngFor="let item of items">
+    {{ item }}
+  </ion-item>
+</ion-list> -->
+</ion-header>
+
+<ion-content padding class="bg">
+
+<!--barra de busqueda-->
+<!-- <ion-searchbar  (ionInput)="getItems($event)"></ion-searchbar>
+<ion-list>
+  <ion-item *ngFor="let usuario of usuarios"> -->
+    <!-- {{ usuario.tags }} -->
+  <!-- </ion-item>
+
+</ion-list> -->
+<!--barra de busqueda-->
+ <!--<ion-grid *ngIf="usuarios">-->
+  <!--IMAGENESSSSS-->
+
+    <!-- <ion-item  class="bg"*ngFor='let usuario of usuarios'>
+      <ion-grid>
+       
+         
+          <ion-img style="width: 150px; height: 150px"   controls src="http://videos.eventoz.tv/cc-content/uploads/thumbs/{{usuario.filename}}"></ion-img>
+             </ion-grid>
+    </ion-item> -->
+           
+<!--AQUITERMINAR-->
+
+
+<ion-grid *ngIf="usuarios">
+
+    <ion-row>
+      <ion-searchbar (ionInput)="getItems($event)"></ion-searchbar>
+      <!-- |filter:usuario.category_id=1
+      | filter:{ usuario.category_id:'1'}'
+       -->
+      
+      <ion-col col-6 *ngFor="let usuario of usuarios ">
+        
+        {{usuario.title}}
+        <img style="width: 150px; height: 200px" src="http://videos.eventoz.tv/cc-content/uploads/thumbs/{{usuario.filename}}" (click)="goToDetail(usuario)">
+        {{usuario.category_id}}
+      </ion-col>
+       
+    </ion-row>
+  </ion-grid>
+<!-- <button ion-button full color="dark">MAS VIDEOS</button>
+ <div id="topButtons">
+  <button ion-button (click)="signIn()" item-left>Sign In</button>
+  <button ion-button (click)="register()" item-left>Register</button>
+  </div>
+ -->
+    
+     
+    <!--   <h1>ID :{{usuario.id}}</h1>
+      <h1>{{usuario.address.street}}</h1>
+      <h2>NAME: {{ usuario.name }}</h2>
+      <h3>USERNAME :{{ usuario.username }}</h3>
+      <h4>EMAIL :{{ usuario.email}}</h4>
+      <p>{{ usuario.phone}}</p>
+      <p>{{ usuario.website }}</p>
+      <h1>{{usuario.title}}</h1>
+      {{usuario.__proto__.constructor}} -->
+
+      
+
+
+     <!-- <h2>{{usuario.filename}}-{{usuario.description}}</h2>
+     <h3>{{usuario.lags}}-{{usuario.category_id}}</h3>
+      <h3>{{usuario.lags}}-{{usuario.duration}}</h3>   --> 
+      
+     
+   
+
+<!--AQUI TERMINA..-->
+
+
+
+
+</ion-content>
+
+

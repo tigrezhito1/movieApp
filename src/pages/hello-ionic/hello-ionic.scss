@@ -1,0 +1,65 @@
+page-hello-ionic {
+	//ion-content{
+
+	//	background: #904779 !important;
+	//}
+
+ div{
+    font-face: "MyCustomFont";
+}
+	.bg{
+	background: linear-gradient(to right, #222, #222 100%);
+  font-size:20px;
+  font-weight: bold;
+  color:#fff;
+  font-family: Georgia, 'Times New Roman', serif;
+}
+	//.bgimagen{
+	//background-image:url('../assets/imgs/twd.jpg');
+	//background-repeat:no-repeat;
+	//background-position:center;
+	//background-size:contain;
+
+	ion-card {
+  position: relative;
+    text-align: center;
+  }
+  .bg1{
+  font-size:15px;
+  font-weight: bold;
+
+  }
+
+  .card-title {
+    position: absolute;
+    top: 36%;
+    font-size: 2.0em;
+    width: 100%;
+    font-weight: bold;
+    color: #fff;
+  }
+
+  .card-subtitle {
+    font-size: 1.0em;
+    position: absolute;
+    top: 52%;
+    width: 100%;
+    color: #fff;
+  }
+
+  .titulo{
+ 
+ 
+  font-size:15px;
+   font-family: "Tahoma", "Geneva", sans-serif;
+    font-weight: bold;
+  }
+
+
+
+	}
+
+
+
+
+

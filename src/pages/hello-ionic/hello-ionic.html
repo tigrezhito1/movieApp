@@ -1,0 +1,85 @@
+<ion-header >
+  <ion-navbar color="primary"><!--1) agregamos el color -->
+   
+     <!--AQUI SE ENCUENTRA EL el menu-->
+      <button ion-button menuToggle>
+        <ion-icon name="menu"></ion-icon>
+      </button>
+     <br><!--2) AGREGUE ESPACIO BR-->
+     <br>
+      </ion-navbar>
+</ion-header>
+
+<ion-content padding class="bg">
+ <div text-center>Novedades EVO Internet<br></div><br>
+ 
+ <div text-center class="bg1">Videos Adicionados Recientemente</div><br>
+
+<!--barra de busqueda-->
+<!-- <ion-searchbar  (ionInput)="getItems($event)"></ion-searchbar>
+<ion-list>
+  <ion-item *ngFor="let usuario of usuarios"> -->
+    <!-- {{ usuario.tags }} -->
+  <!-- </ion-item>
+
+</ion-list> -->
+<!--barra de busqueda-->
+   <!--  <ion-item  class="bg"*ngFor='let usuario of usuarios'> -->
+
+    <!--    <h1 class='titulo'> {{usuario.title}}</h1>
+ -->
+
+
+
+    <!--imagen-->   <!-- <video width="100%" heigth="100% " controls  poster="http://videos.eventoz.tv/cc-content/uploads/thumbs/{{usuario.filename}}"> -->
+          
+           <!--video--> <!-- <source src="http://videos.eventoz.tv/cc-content/uploads/h264/movies/{{usuario.filename}}" type="video/mp4"> -->
+          
+           
+          <!--   Your browser does not support HTML5 video. -->
+         <!--  </video> -->
+
+         
+
+           <!--  {{usuario.tags}} -->
+
+
+<!-- <button ion-button full color="dark">MAS VIDEOS</button>
+ <div id="topButtons">
+  <button ion-button (click)="signIn()" item-left>Sign In</button>
+  <button ion-button (click)="register()" item-left>Register</button>
+  </div>
+ -->
+    
+     
+    <!--   <h1>ID :{{usuario.id}}</h1>
+      <h1>{{usuario.address.street}}</h1>
+      <h2>NAME: {{ usuario.name }}</h2>
+      <h3>USERNAME :{{ usuario.username }}</h3>
+      <h4>EMAIL :{{ usuario.email}}</h4>
+      <p>{{ usuario.phone}}</p>
+      <p>{{ usuario.website }}</p>
+      <h1>{{usuario.title}}</h1>
+      {{usuario.__proto__.constructor}} -->
+
+      
+
+
+     <!-- <h2>{{usuario.filename}}-{{usuario.description}}</h2>
+     <h3>{{usuario.lags}}-{{usuario.category_id}}</h3>
+      <h3>{{usuario.lags}}-{{usuario.duration}}</h3>   --> 
+    
+   <!--  </ion-item> -->
+   <div >
+  <button ion-button (click)="signIn()" item-left>Registrarse</button>
+  <button ion-button (click)="register()" item-left>Registro</button>
+  </div>
+
+<!--AQUI TERMINA..-->
+
+
+
+
+</ion-content>
+
+
